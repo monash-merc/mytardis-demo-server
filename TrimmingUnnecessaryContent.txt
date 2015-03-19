@@ -1,0 +1,48 @@
+Installed Python modules as zipped eggs where supported.
+- Less files speeds up installation.
+Removed non-English locales
+Removed pylint package
+Removing Python27\lib\test, Python27\lib\site-packages\tests, not to be
+confused with unittest.
+Instructed InnoSetup to ignore .pyc files
+When installing Python 2.7.9, requested a bare minimum Python installation
+(no Tcl/Tk IDLE GUI, no documentation etc.)
+
+I'll include these tests:
+
+./[MyTardis Commit Hash]/tardis/apps/anzsrc_codes/tests
+./[MyTardis Commit Hash]/tardis/apps/oaipmh/tests
+./[MyTardis Commit Hash]/tardis/apps/related_info/tests
+./[MyTardis Commit Hash]/tardis/tardis_portal/tests
+
+but remove these ones:
+
+(manually for now, script to come later).
+
+./Python27/lib/test/
+./Python27/lib/site-packages/tests/
+./Python27/Lib/lib2to3/tests
+./Python27/Lib/site-packages/billiard-3.3.0.19-py2.7-win32.egg/billiard/tests
+./Python27/Lib/site-packages/bleach-1.4.1-py2.7.egg/bleach/tests
+./Python27/Lib/site-packages/celery/tests
+./Python27/Lib/site-packages/django/contrib/admindocs/tests
+./Python27/Lib/site-packages/django/contrib/auth/tests
+./Python27/Lib/site-packages/django/contrib/flatpages/tests
+./Python27/Lib/site-packages/django/contrib/formtools/tests
+./Python27/Lib/site-packages/django/contrib/gis/gdal/tests
+./Python27/Lib/site-packages/django/contrib/gis/geos/tests
+./Python27/Lib/site-packages/django/contrib/gis/tests
+./Python27/Lib/site-packages/django/contrib/messages/tests
+./Python27/Lib/site-packages/django/contrib/sitemaps/tests
+./Python27/Lib/site-packages/django_extensions-1.1.1-py2.7.egg/django_extensions
+/tests
+./Python27/Lib/site-packages/django_mustachejs-0.6.0-py2.7.egg/mustachejs/tests
+./Python27/Lib/site-packages/django_user_agents-0.2.2-py2.7.egg/django_user_agen
+ts/tests
+./Python27/Lib/site-packages/djcelery/tests
+./Python27/Lib/site-packages/kombu/tests
+./Python27/Lib/site-packages/pyoai-2.4.4-py2.7.egg/oaipmh/tests
+./Python27/Lib/site-packages/pystache-0.5.4-py2.7.egg/pystache/tests
+./Python27/Lib/site-packages/setuptools/tests
+./Python27/Lib/site-packages/South-1.0.2-py2.7.egg/south/tests
+

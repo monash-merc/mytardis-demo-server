@@ -1,0 +1,9 @@
+If you install Python 2.7.x in two places on your Windows system, e.g. in
+C:\Python27 first, followed by C:\build\mytardis-demo-server\Python27, then
+certain values in the registry will be overwritten, effectively making your
+PYTHONPATH point to the most recent Python installation.  You can correct this
+with regedit.exe.  The relevant registry paths are:
+
+HKEY_CURRENT_USER\SOFTWARE\Python\PythonCore\version\PythonPath
+HKEY_LOCAL_MACHINE\SOFTWARE\Python\PythonCore\version\PythonPath
+
